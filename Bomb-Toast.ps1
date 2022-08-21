@@ -24,7 +24,6 @@ While($TimeLeft -ge 0){
     Update-BTNotification -UniqueIdentifier "ToastBomb" -DataBinding $DataBinding
     $TimeLeft = $TimeLeft - 1
     Start-Sleep -Seconds 1
-    $TimeLeft
 }
 Start-Sleep -Seconds 1
 New-BurntToastNotification -Text 'boom' -AppLogo (New-BTImage -Source 'https://thumbs.dreamstime.com/z/boom-comic-word-color-art-bubble-shape-bomb-explosion-effect-cartoon-vector-speech-sticker-boom-comic-word-color-art-bubble-179847123.jpg') -SnoozeAndDismiss
